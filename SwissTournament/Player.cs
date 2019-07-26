@@ -5,8 +5,8 @@ namespace SwissTournament
     public class Player : IPlayer
     {
         public Guid Id { get; }
-        public string Name { get; }
-        public int Seed { get; }
+        public string Name { get; } = "";
+        public int Seed { get; } = 0;
 
         public Player()
         {
@@ -17,6 +17,11 @@ namespace SwissTournament
         {
             Id = Guid.NewGuid();
             Name = name;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} (seed: {Seed})";
         }
     }
 }
