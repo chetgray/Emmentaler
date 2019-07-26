@@ -2,7 +2,7 @@ using System;
 using Xunit;
 using FluentAssertions;
 
-namespace SwissTournament.Tests
+namespace Emmentaler.Tests
 {
     public class TournamentTests
     {

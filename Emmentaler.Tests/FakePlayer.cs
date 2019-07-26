@@ -1,6 +1,6 @@
 using System;
 
-namespace SwissTournament.Tests
+namespace Emmentaler.Tests
 {
     public class FakePlayer : IPlayer
     {

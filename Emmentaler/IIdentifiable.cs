@@ -1,6 +1,6 @@
 using System;
 
-namespace SwissTournament
+namespace Emmentaler
 {
     public interface IIdentifiable
     {

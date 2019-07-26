@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace SwissTournament
+namespace Emmentaler
 {
     public class Player : IPlayer
     {

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SwissTournament\SwissTournament.csproj" />
+    <ProjectReference Include="..\Emmentaler\Emmentaler.csproj" />
   </ItemGroup>
 
 </Project>

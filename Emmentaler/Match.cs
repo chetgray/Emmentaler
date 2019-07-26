@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SwissTournament
+namespace Emmentaler
 {
     public class Match : IMatch
     {

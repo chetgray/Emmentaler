@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissTournament", "SwissTournament\SwissTournament.csproj", "{6BB21257-0E54-410F-9286-66481F5BF2BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emmentaler", "Emmentaler\Emmentaler.csproj", "{6BB21257-0E54-410F-9286-66481F5BF2BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwissTournament.Tests", "SwissTournament.Tests\SwissTournament.Tests.csproj", "{8D7715C0-4725-46B1-A4C1-A440EEDC5547}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emmentaler.Tests", "Emmentaler.Tests\Emmentaler.Tests.csproj", "{8D7715C0-4725-46B1-A4C1-A440EEDC5547}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
