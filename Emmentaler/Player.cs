@@ -6,7 +6,7 @@ namespace Emmentaler
     public class Player : IPlayer
     {
         [JsonProperty]
-        public Guid Id { get; } = Guid.NewGuid();
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         [JsonProperty]
         public string Name { get; set; } = "";
@@ -16,7 +16,7 @@ namespace Emmentaler
 
         public override string ToString()
         {
-            return $"{Name} (ID: {Id}, seed: {Seed})";
+            return $"{Name} (seed: {Seed})";
         }
     }
 }

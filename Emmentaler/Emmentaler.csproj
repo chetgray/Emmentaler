@@ -6,7 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EasyConsole" Version="1.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);NU1701</NoWarn>
+  </PropertyGroup>
 </Project>
