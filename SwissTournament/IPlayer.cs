@@ -2,9 +2,8 @@ using System;
 
 namespace SwissTournament
 {
-    public interface IPlayer
+    public interface IPlayer : IIdentifiable
     {
-        Guid Id { get; }
         string Name { get; }
         int Seed { get; }
     }
