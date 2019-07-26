@@ -5,19 +5,21 @@ namespace SwissTournament
 {
     public class Tournament
     {
-        public IList<IPlayer> Players { get; } = new List<IPlayer>();
+        public IReadOnlyList<IPlayer> Players { get; } = new List<IPlayer>();
         public IList<IRound> Rounds { get; }
         public int? CurrentRoundNumber { get; }
 
         public bool AddPlayer(IPlayer player)
         {
-            if (Players.Contains(player))
+            var players = Players as IList<IPlayer>;
+
+            if (players.Contains(player))
             {
                 return false;
             }
             else
             {
-                Players.Add(player);
+                players.Add(player);
                 return true;
             }
         }
