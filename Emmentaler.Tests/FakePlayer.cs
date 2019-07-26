@@ -12,11 +12,13 @@ namespace Emmentaler.Tests
         public string Name
         {
             get => throw new NotImplementedException();
+            set => throw new NotImplementedException();
         }
 
         public int Seed
         {
             get => throw new NotImplementedException();
+            set => throw new NotImplementedException();
         }
     }
 }
