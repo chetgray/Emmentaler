@@ -4,12 +4,12 @@ using FluentAssertions;
 
 namespace SwissTournament.Tests
 {
-    public class Tournament_TryAddPlayer
+    public class TournamentTests
     {
         Tournament tournament = new Tournament();
 
         [Fact]
-        public void AddsPlayer()
+        public void TryAddPlayer_EmptyTournament_AddsPlayer()
         {
             //Given
             var player = new FakePlayer();
@@ -22,7 +22,7 @@ namespace SwissTournament.Tests
         }
 
         [Fact]
-        public void DisallowsDuplicates()
+        public void TryAddPlayer_PlayerAlreadyAdded_DisallowsDuplicate()
         {
             //Given
             var player = new FakePlayer();
