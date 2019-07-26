@@ -16,7 +16,7 @@ namespace SwissTournament
 
         public override string ToString()
         {
-            return $"{Name} (seed: {Seed})";
+            return $"{Name} (ID: {Id}, seed: {Seed})";
         }
     }
 }
