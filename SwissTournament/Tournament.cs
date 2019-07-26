@@ -11,8 +11,15 @@ namespace SwissTournament
 
         public bool TryAddPlayer(IPlayer player)
         {
-            Players.Add(player);
-            return true;
+            if (Players.Contains(player))
+            {
+                return false;
+            }
+            else
+            {
+                Players.Add(player);
+                return true;
+            }
         }
     }
 }
