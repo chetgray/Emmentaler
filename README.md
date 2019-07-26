@@ -12,7 +12,6 @@
   - string Name
   - int Seed
 - Round
-  - int Number
   - Match[] Matches
 - Match
   - Player[] Players
