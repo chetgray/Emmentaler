@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using FluentAssertions;
 
 namespace SwissTournament.Tests
 {
@@ -17,7 +18,7 @@ namespace SwissTournament.Tests
             tournament.TryAddPlayer(player);
 
             //Then
-            Assert.Contains(player, tournament.Players);
+            tournament.Players.Should().Contain(player);
         }
     }
 }
