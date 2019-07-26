@@ -9,7 +9,7 @@ namespace SwissTournament
         public IList<IRound> Rounds { get; }
         public int? CurrentRoundNumber { get; }
 
-        public bool TryAddPlayer(IPlayer player)
+        public bool AddPlayer(IPlayer player)
         {
             if (Players.Contains(player))
             {

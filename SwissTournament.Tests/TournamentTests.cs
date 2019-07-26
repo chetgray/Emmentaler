@@ -9,13 +9,13 @@ namespace SwissTournament.Tests
         Tournament tournament = new Tournament();
 
         [Fact]
-        public void TryAddPlayer_EmptyTournament_AddsPlayer()
+        public void AddPlayer_EmptyTournament_AddsPlayer()
         {
             //Given
             var player = new FakePlayer();
 
             //When
-            var wasAdded = tournament.TryAddPlayer(player);
+            var wasAdded = tournament.AddPlayer(player);
 
             //Then
             wasAdded.Should().BeTrue();
@@ -23,14 +23,14 @@ namespace SwissTournament.Tests
         }
 
         [Fact]
-        public void TryAddPlayer_PlayerAlreadyAdded_DisallowsDuplicate()
+        public void AddPlayer_PlayerAlreadyAdded_DisallowsDuplicate()
         {
             //Given
             var player = new FakePlayer();
 
             //When
-            tournament.TryAddPlayer(player);
-            var wasAddedAgain = tournament.TryAddPlayer(player);
+            tournament.AddPlayer(player);
+            var wasAddedAgain = tournament.AddPlayer(player);
 
             //Then
             wasAddedAgain.Should().BeFalse("because the player was already in the tournament");
