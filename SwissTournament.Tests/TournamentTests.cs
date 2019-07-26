@@ -15,9 +15,10 @@ namespace SwissTournament.Tests
             var player = new FakePlayer();
 
             //When
-            tournament.TryAddPlayer(player);
+            var wasAdded = tournament.TryAddPlayer(player);
 
             //Then
+            wasAdded.Should().BeTrue();
             tournament.Players.Should().Contain(player);
         }
 
